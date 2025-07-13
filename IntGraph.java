@@ -30,3 +30,4 @@ public interface IntGraph {
     */
     public List<Integer> adj(int v);
 }
+

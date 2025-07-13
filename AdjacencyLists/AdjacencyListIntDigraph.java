@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class AdjacencyListIntDigraph implements IntDigraph {
+public class AdjacencyListIntDigraph implements IntGraph {
 
     // Number of vertices in the graph
     private final int V;
