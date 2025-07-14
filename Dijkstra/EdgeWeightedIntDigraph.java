@@ -12,6 +12,14 @@ public class EdgeWeightedIntDigraph {
     private int E;
     private List<DirectedEdge>[] adj;
 
+    public int V() {
+        return V;
+    }
+
+    public int E() {
+        return E;
+    }
+
     /**
     * @pre V >= 0
     * @post Initializes an edge-weighted digraph with V vertices and 0 edges.
