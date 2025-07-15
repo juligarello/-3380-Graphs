@@ -10,7 +10,7 @@ public class Dijkstra {
     * vertex in the edge-weighted digraph G.
     */
     public Dijkstra(EdgeWeightedIntDigraph G, int s) {
-        if (s < 0 || s >= G.V())
+        if(s < 0 || s >= G.V())
             throw new IllegalArgumentException();
 
         distTo = new double[G.V()];
