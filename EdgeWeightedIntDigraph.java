@@ -61,4 +61,17 @@ public class EdgeWeightedIntDigraph {
 
         return adj[v];
     }
+
+    public List<DirectedEdge> edges(){
+        List<DirectedEdge> list = new LinkedList<>();
+
+        for(int v = 0; v<V; v++){
+            for(DirectedEdge e: adj(v)){
+                if(e.other(v) > v)
+                    list.add(e);
+            }
+        }
+
+        return list;
+    }
 }

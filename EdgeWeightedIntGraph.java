@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -64,7 +63,7 @@ public class EdgeWeightedIntGraph {
     }
 
     public Iterable<Edge> edges() {
-        List<Edge> list = new ArrayList<>();
+        List<Edge> list = new LinkedList<>();
 
         for(int v = 0; v < V; v++) {
             for(Edge e : adj[v]) {

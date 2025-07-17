@@ -16,4 +16,18 @@ public class DirectedEdge {
     this.to = to;
     this.weight = weight;
     }
+
+    public int either() {
+        return from;
+    }
+
+    public int other(int e) {
+        if(e == from) {
+            return to;
+        } else if(e == to) {
+            return from;
+        }   else    {
+            throw new IllegalArgumentException();
+        }
+    }
 }
