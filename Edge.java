@@ -20,10 +20,10 @@ public class Edge {
         return from;
     }
 
-    public int other(int vertex) {
-        if(vertex == from) {
+    public int other(int e) {
+        if(e == from) {
             return to;
-        } else if(vertex == to) {
+        } else if(e == to) {
             return from;
         }   else    {
             throw new IllegalArgumentException();
